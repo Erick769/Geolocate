@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">,
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação de Localização</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #800080; /* Cor de fundo roxo */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ffffff; /* Cor do botão */
+            color: #800080; /* Cor do texto do botão */
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 10px; /* Bordas arredondadas */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f0f0f0; /* Cor do botão ao passar o mouse */
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
     <script>
         // Coordenadas do local permitido
         const latitudePermitida = -23.714015275140664;
@@ -53,8 +111,10 @@
     </script>
 </head>
 <body>
-    <h1>Verificação de Localização</h1>
-    <p>Clique no botão abaixo para verificar sua localização e acessar o formulário.</p>
-    <button onclick="verificarLocalizacao()">Verificar Localização</button>
+    <div class="container">
+        <h1>Para confirmar sua presença, é necessário que confirme sua localização.</h1>
+        <p>Clique no botão abaixo para verificar sua localização e acessar o formulário.</p>
+        <button onclick="verificarLocalizacao()">Verificar Localização</button>
+    </div>
 </body>
 </html>
